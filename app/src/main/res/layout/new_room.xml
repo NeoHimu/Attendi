@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idLLNameNewRoom"
+            android:orientation="vertical"
+            android:layout_marginTop="60sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="Room Name"
+                android:id="@+id/idTvNameNewRoom"
+                android:textColor="@color/colorText"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idEtNameNewRoom"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                android:hint="Write here.."/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idLLDescription"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical"
+            android:layout_below="@+id/idLLNameNewRoom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="Description"
+                android:id="@+id/idTvDescription"
+                android:textColor="@color/colorText"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idEtDescriptionNewRoom"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                android:lines="5"
+                android:hint="Write here.."
+                android:gravity="top"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idLLDoneNewRoom"
+            android:orientation="vertical"
+            android:layout_below="@+id/idLLDescription"
+            android:layout_marginTop="20sp"
+            android:gravity="right">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idBtnDoneNewRoom"
+                android:layout_margin="5sp"
+                android:textSize="24sp"
+                android:text="Done"
+                android:textColor="#ffffff"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

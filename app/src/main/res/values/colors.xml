@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorText">#5e7974</color>
+    <color name="colorHint">#afcbc5</color>
+    <color name="colorWidget">#5e7974</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorForgotPassword">#6c70ef</color>
+</resources>

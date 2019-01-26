@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        <Button
+            android:id="@+id/idScanQRCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:padding="5sp"
+            android:textSize="24sp"
+            android:layout_margin="5sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:text="@string/scan" />
+
+            <Button
+                android:id="@+id/idSubmitAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:padding="5sp"
+                android:layout_margin="5sp"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:text="Done" />
+        </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/llSearch"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/idScanQRCode"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:minEms="4"-->
+                <!--android:text="Format :"-->
+                <!--android:textColor="@color/colorText"-->
+                <!--android:textIsSelectable="true"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvScanContent"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textIsSelectable="true"-->
+                <!--android:textSize="14sp" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/llSearch"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rooms you were in :"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/idTextOnAttendedPage"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idListViewAttended"
+                android:scrollbars="vertical">
+
+            </ListView>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:minEms="4"-->
+                <!--android:text="Content :"-->
+                <!--android:textColor="@color/colorText"-->
+                <!--android:textIsSelectable="true"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvScanFormat"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_weight="1.0"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textIsSelectable="true"-->
+                <!--android:textSize="14sp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

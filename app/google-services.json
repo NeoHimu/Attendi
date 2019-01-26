@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "812108560062",
+    "firebase_url": "https://attendancemarker-7d907.firebaseio.com",
+    "project_id": "attendancemarker-7d907",
+    "storage_bucket": "attendancemarker-7d907.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812108560062:android:53a5fddbbb059272",
+        "android_client_info": {
+          "package_name": "com.helloworld.www.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812108560062-6berve0gaot3fupaeg7im8bhkb08tnp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.helloworld.www.helloworld",
+            "certificate_hash": "4060c392f4298845ccf8ff01ea041cd61d4413ca"
+          }
+        },
+        {
+          "client_id": "812108560062-8vt5pdsdk5qqvvk67goje9muh0kcm6b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrRV7wJpGnmqmFRThtsiy95zm9XsS9trQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812108560062-8vt5pdsdk5qqvvk67goje9muh0kcm6b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

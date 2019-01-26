@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helloworld.www.helloworld.MainActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingTop="80sp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="10sp"
+            android:id="@+id/idLLMobNoLoginPage">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/idMobNoLoginPage"
+                android:orientation="horizontal"
+                android:hint="Mobile number"
+                android:textColorHint="@color/colorHint"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:id="@+id/idWarningMobNoLoginPage"
+            android:layout_below="@+id/idLLMobNoLoginPage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:paddingTop="10sp"
+            android:layout_below="@+id/idWarningMobNoLoginPage"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:id="@+id/idLLPwdLoginPage">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idPwdLoginPage"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:inputType="textPassword"
+                android:textSize="24sp"
+                android:hint="Password"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idWarningPwdLoginPage"
+            android:textColor="@color/colorRed"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_below="@+id/idLLPwdLoginPage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25sp"
+            android:layout_below="@+id/idWarningPwdLoginPage"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:id="@+id/idLLBtLogin">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idBtLogin"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:text="Login"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idSignUpLoginPage"
+            android:textColor="@color/colorForgotPassword"
+            android:text="SignUp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingTop="25sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="10sp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/idLLBtLogin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idForgotPasswordLoginPage"
+            android:textColor="@color/colorForgotPassword"
+            android:text="Forgot password?"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:paddingTop="10sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/idSignUpLoginPage"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

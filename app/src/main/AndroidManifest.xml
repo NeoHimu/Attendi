@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.helloworld.www.helloworld"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Attendi"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AppUsageStatisticsActivity"/>
+        <activity android:name=".Signup2" />
+        <activity android:name=".Signup3" />
+        <activity android:name=".Home"/>
+        <activity android:name=".Room"/>
+        <activity android:name=".NewRoom"/>
+        <activity android:name=".PrepareQRCode"/>
+        <activity android:name=".StudentsList"/>
+        <activity android:name=".AttendanceDetails"/>
+        <activity android:name=".Profile"/>
+        <activity android:name=".HomeTabbedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Contact_QR_Code"/>
+        <activity android:name=".Login"/>
+        <activity
+
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+
+            android:screenOrientation="portrait"
+
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+
+        </activity>
+    </application>
+
+</manifest>

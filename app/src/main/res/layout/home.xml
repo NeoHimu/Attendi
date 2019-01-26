@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helloworld.www.helloworld.Home"
+   >
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+    </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:layout_below="@+id/app_bar">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/idAppUsagePermission"
+    android:text="Set Permission"
+    android:textColor="#ffffff"
+    android:background="@drawable/button"
+    android:layout_margin="5sp"/>
+    <Button
+        android:layout_below="@+id/idAppUsagePermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idNextFromHome"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:background="@drawable/button"
+        android:layout_margin="5sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

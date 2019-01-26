@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.helloworld.www.helloworld.MainActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:id="@+id/idLLNames"
+            >
+
+            <EditText android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="First Name"
+                android:id="@+id/idFirstName"
+                android:textSize="24sp"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/colorText"/>
+
+            <EditText android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Surname"
+                android:id="@+id/idSurname"
+                android:textSize="24sp"
+                android:textColorHint="@color/colorHint"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:id="@+id/idWarningNames"
+            android:layout_below="@+id/idLLNames"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingTop="25sp"
+            android:layout_below="@+id/idWarningNames"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:id="@+id/idLLRollNo">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/idRollNo"
+                android:orientation="horizontal"
+                android:hint="@string/rollno"
+                android:textColorHint="@color/colorHint"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:id="@+id/idWarningRollNo"
+            android:layout_below="@+id/idLLRollNo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:paddingTop="25sp"
+            android:layout_below="@+id/idWarningRollNo"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:id="@+id/idLLMailId">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idMailId"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorHint"
+                android:textSize="24sp"
+                android:hint="Mail Id"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idWarningMailId"
+            android:textColor="@color/colorRed"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:layout_below="@+id/idLLMailId"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:paddingTop="25sp"
+            android:layout_below="@+id/idWarningMailId"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingBottom="25sp"
+            android:id="@+id/idLLBtNext">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idBtNext"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:text="Next"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
