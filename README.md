@@ -6,8 +6,14 @@ An attendance marking android application. Teacher displays a QR code on the pro
 
 <img src="images/1.png" height="360" width="240">
 
+---------------------------------------------------
+
 <img src="images/2.png" height="360" width="240">
 
+---------------------------------------------------
+
 <img src="images/3.png" height="360" width="240">
+
+---------------------------------------------------
 
 <img src="images/4.png" height="360" width="240">
