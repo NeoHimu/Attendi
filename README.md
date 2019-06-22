@@ -4,7 +4,7 @@ An attendance marking android application. Teacher displays a QR code on the pro
 
 #  Some screens of the app
 
-<img src="images/1.png" height="24" width="16">
+<img src="images/1.png" height="240" width="160">
 
 ![25%](images/2.png)
 
